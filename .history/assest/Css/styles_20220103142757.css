@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main {}
+
+#header {
+    height: 46px;
+    background-color: black;
+}
+
+#nav li {
+    display: inline-block;
+}
+
+#slides {}
+
+#content {}
+
+#footer {}
