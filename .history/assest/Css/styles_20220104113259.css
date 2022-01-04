@@ -41,10 +41,6 @@ html {
     display: block;
 }
 
-#nav li:hover .subnav {
-    display: block;
-}
-
 #nav>li:hover>a,
 #nav .subnav li:hover a {
     background-color: #ccc;
@@ -56,7 +52,7 @@ html {
 }
 
 #nav .subnav {
-    display: none;
+    /* display: none; */
     position: absolute;
     top: 46px;
     background-color: #fff;
@@ -72,7 +68,7 @@ html {
 
 #slides {
     min-height: 300px;
-    background-color: whitesmoke;
+    background-color: #333;
 }
 
 #content {}

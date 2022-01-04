@@ -15,64 +15,34 @@ html {
     background-color: black;
 }
 
-#nav,
-.subnav {
-    list-style: none;
-}
-
-#nav>li {
-    display: inline-block;
-}
-
 #nav li {
+    display: inline-block;
     position: relative;
 }
 
-#nav>li>a {
-    color: white;
-    text-transform: uppercase;
-    /* chinh chu thuong thanh hoa */
-}
-
 #nav li a {
+    color: white;
     text-decoration: none;
     line-height: 46px;
     padding: 0 24px;
     display: block;
 }
 
-#nav li:hover .subnav {
-    display: block;
-}
-
-#nav>li:hover>a,
-#nav .subnav li:hover a {
+#nav li:hover a {
     background-color: #ccc;
     color: black;
-}
-
-#nav li:hover a {
     /* line-height: 46px; */
 }
 
 #nav .subnav {
-    display: none;
+    /* display: none; */
     position: absolute;
     top: 46px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-#nav .subnav li a {
-    color: black;
-    padding: 0 16px;
-    line-height: 38px;
-    width: 160px;
 }
 
 #slides {
     min-height: 300px;
-    background-color: whitesmoke;
+    background-color: #333;
 }
 
 #content {}
