@@ -11,11 +11,6 @@ html {
 #main {}
 
 #header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    /* fixed đang nổi lên nó sẽ nhường vị trí cho div slides tiếp theo */
     height: 46px;
     background-color: black;
 }
@@ -103,9 +98,8 @@ html {
 }
 
 #slides {
-    height: 100px;
-    background-color: pink;
-    margin-top: 46px;
+    min-height: 300px;
+    background-color: whitesmoke;
 }
 
 #content {}

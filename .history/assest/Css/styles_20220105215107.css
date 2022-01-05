@@ -103,8 +103,8 @@ html {
 }
 
 #slides {
-    height: 100px;
-    background-color: pink;
+    min-height: 1000px;
+    /* background-color: pink; */
     margin-top: 46px;
 }
 

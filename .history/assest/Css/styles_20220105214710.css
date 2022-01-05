@@ -11,13 +11,12 @@ html {
 #main {}
 
 #header {
+    height: 46px;
+    background-color: black;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    /* fixed đang nổi lên nó sẽ nhường vị trí cho div slides tiếp theo */
-    height: 46px;
-    background-color: black;
 }
 
 #nav {
@@ -103,9 +102,8 @@ html {
 }
 
 #slides {
-    height: 100px;
+    min-height: 1000px;
     background-color: pink;
-    margin-top: 46px;
 }
 
 #content {}
