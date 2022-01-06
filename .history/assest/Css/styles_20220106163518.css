@@ -18,8 +18,6 @@ html {
     /* fixed đang nổi lên nó sẽ nhường vị trí cho div slides tiếp theo */
     height: 46px;
     background-color: black;
-    z-index: 1;
-    /* dùng để thêm vào thẻ fixed nhằm đẩy block lên trên các block khác theo chiều cao, giá trị là 0, 1,... */
 }
 
 #nav {
@@ -105,7 +103,7 @@ html {
 }
 
 #slides {
-    /* min-height: 1000px; */
+    /* height: 1000px; */
     /* background-color: pink; */
     margin-top: 46px;
     padding-top: 50%;
@@ -129,14 +127,9 @@ html {
     /* /* cách 3 left: 0 right: 0; */
 }
 
-#slides .text-heading {
-    font-weight: 500;
-    /* dùng để điều chỉnh lại độ dày của chữ, giá trị từ 100-1000  */
-    font-size: 24px;
-    margin-bottom: 25px;
-}
-
-#slides .text-paragraph {
+#slider .text-heading {
+    font-wedth: 500px;
+    /*  */
     font-size: 15px;
 }
 
