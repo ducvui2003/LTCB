@@ -167,10 +167,6 @@ html {
 #content .content-text {
     font-size: 15px;
     margin-top: 25px;
-    text-align: justify;
-    /* Can deu van ban */
-    line-height: 1.4;
-    /* Khoang cach giua 2 hang chu */
 }
 
 #footer {}
