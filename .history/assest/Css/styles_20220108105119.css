@@ -8,10 +8,6 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.clear {
-    clear: both;
-}
-
 #main {}
 
 #header {
@@ -179,26 +175,10 @@ html {
 
 #content .member-list {
     margin-top: 48px;
-    /* overflow: hidden; */
 }
 
 #content .member-item {
     float: left;
-    width: calc(100% /3);
-    text-align: center;
-    /* Can hinh voi chu */
-}
-
-#content .member-name {
-    font-size: 15px;
-}
-
-#content .member-avatar {
-    margin-top: 15px;
-    width: 154px;
-    /* Dung the <img> thì chỉ cần đặt 1 chiều */
-    border-radius: 4px;
-    /* Dùng để tạo bo góc của ảnh */
 }
 
 #footer {}

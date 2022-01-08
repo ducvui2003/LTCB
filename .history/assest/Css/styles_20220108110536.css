@@ -179,7 +179,7 @@ html {
 
 #content .member-list {
     margin-top: 48px;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 #content .member-item {
