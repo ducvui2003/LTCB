@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+#main {}
+
+#header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    /* fixed đang nổi lên nó sẽ nhường vị trí cho div slides tiếp theo */
+    height: 46px;
+    background-color: black;
+    z-index: 1;
+    /* dùng để thêm vào thẻ fixed nhằm đẩy block lên trên các block khác theo chiều cao, giá trị là 0, 1,... */
+}
+
+#nav {
+    display: inline-block;
+    /* display để thẻ nav chỉ dài đúng nội dung của nó thôi */
+}
+
+#nav,
+.subnav {
+    list-style: none;
+}
+
+#nav>li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav>li>a {
+    color: white;
+    text-transform: uppercase;
+    /* chinh chu thuong thanh hoa */
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav>li:hover>a,
+#nav .subnav li:hover a {
+    background-color: #ccc;
+    color: black;
+}
+
+#nav li:hover a {
+    /* line-height: 46px; */
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top: 46px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav li a {
+    color: black;
+    padding: 0 16px;
+    line-height: 38px;
+    width: 160px;
+}
+
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+
+#header .search-button {
+    float: right;
+    /* thẻ search-button là thẻ div, có tính kế thừa chiều ngang, nên khi float vào sẽ vô hiệu hoá tính kế thừa chiều ngang đó */
+    line-height: 46px;
+    padding: 0 24px;
+}
+
+#header .search-button:hover {
+    background-color: #f44336;
+    cursor: pointer;
+    /* Dùng để thay đổi con trỏ chuột khi di vào */
+}
+
+#header .search-icon {
+    color: white;
+    font-size: 20px;
+}
+
+#slides {
+    /* min-height: 1000px; */
+    /* background-color: pink; */
+    margin-top: 46px;
+    padding-top: 50%;
+    /* 50% chieu ngang cua chinh the do */
+    background: url('/assest/Img/Slide1.jpg') top center / cover no-repeat;
+    /* shorthand */
+    position: relative;
+}
+
+#slides .text-content {
+    position: absolute;
+    bottom: 46px;
+    left: 50%;
+    /* Cách lề trái 50% chiều ngang */
+    transform: translateX(-50%);
+    /* Dùng để lùi thẻ theo trục X 50% chiều dài -> Mục đích kết hợp vs transform để căn giữa block */
+    color: white;
+    text-align: center;
+    /* Dùng để căn giữa content, ko dùng để căn block */
+    /* cách 2: Thêm width: 100% */
+    /* /* cách 3 left: 0 right: 0; */
+}
+
+#slides .text-heading {
+    font-weight: 500;
+    /* dùng để điều chỉnh lại độ dày của chữ, giá trị từ 100-1000  */
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+#slides .text-paragraph {
+    font-size: 15px;
+}
+
+#content {}
+
+#content .content-section {
+    width: 800px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.5;
+}
+
+#content .content-text {
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: justify;
+    /* Can deu van ban */
+    line-height: 1.4;
+    /* Khoang cach giua 2 hang chu */
+}
+
+#content .member-list {
+    margin-top: 48px;
+    /* overflow: hidden; */
+}
+
+#content .member-item {
+    float: left;
+    width: calc(100% /3);
+    text-align: center;
+    /* Can hinh voi chu */
+}
+
+#content .member-name {
+    font-size: 15px;
+}
+
+#content .member-avatar {
+    margin-top: 15px;
+    width: 154px;
+    /* Dung the <img> thì chỉ cần đặt 1 chiều */
+    border-radius: 4px;
+    /* Dùng để tạo bo góc của ảnh */
+}
+
+#footer {}
