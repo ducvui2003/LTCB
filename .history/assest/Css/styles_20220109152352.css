@@ -236,7 +236,7 @@ html {
 }
 
 .ticket-list .quantity {
-    float: right;
+    float: left;
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -245,8 +245,7 @@ html {
     line-height: 24px;
     background-color: black;
     color: white;
-    margin: -2px;
-    /* Có thẻ float nên có thuộc tính block -> xét đc width, height, dùng đc margin (-) */
+    margin: -3px;
 }
 
 #footer {}

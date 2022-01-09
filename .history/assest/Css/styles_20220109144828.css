@@ -12,13 +12,6 @@ html {
     clear: both;
 }
 
-
-/* Dung cho chu mau trang */
-
-.text-white {
-    color: white !important;
-}
-
 #main {}
 
 #header {
@@ -212,41 +205,7 @@ html {
 /* Tour-section */
 
 #content .tour-section {
-    background-color: black;
-}
-
-.ticket-list {
-    background-color: white;
-    margin-top: 40px;
-}
-
-.ticket-list li {
-    font-size: 15px;
-    padding: 11px 16px;
-    border-bottom: 1px solid #ddd;
-    color: #757575;
-    list-style: none;
-}
-
-.ticket-list .sold-out {
-    color: white;
-    background-color: #f44336;
-    margin-left: 16px;
-    padding: 3px 4px;
-}
-
-.ticket-list .quantity {
-    float: right;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    /* Tao bop goc deu de co hinh tron */
-    text-align: center;
-    line-height: 24px;
-    background-color: black;
-    color: white;
-    margin: -2px;
-    /* Có thẻ float nên có thuộc tính block -> xét đc width, height, dùng đc margin (-) */
+    back
 }
 
 #footer {}
