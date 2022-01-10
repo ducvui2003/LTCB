@@ -313,9 +313,6 @@ html {
 
 #footer {}
 
-
-/* Modal */
-
 .modal {
     /* Create Overlay */
     position: fixed;
@@ -325,24 +322,18 @@ html {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.4);
     /* Flex-box */
+    display: flex;
     /* Căn items theo chiều cao */
     align-items: center;
     /* Căn items theo chiều ngang */
     justify-content: center;
-    display: none;
-}
-
-.modal.open {
-    display: flex;
 }
 
 .modal-container {
     background-color: #fff;
     width: 900px;
-    max-width: calc(100% - 32px);
     min-height: 200px;
     position: relative;
-    animation: modalFadeIn ease 0.5s;
 }
 
 .modal-container .modal-close {
@@ -353,17 +344,16 @@ html {
     color: white;
     /* Make Icon large */
     padding: 12px;
+    cursor: pointer;
 }
 
 .modal-container .modal-close:hover {
     color: black;
-    background-color: #ccc;
-    cursor: pointer;
-    opacity: 0.8;
+    background-color: gray;
 }
 
 .heading-modal {
-    width: 100%;
+    width: 900px;
     height: 129px;
     /* flex */
     display: flex;
@@ -374,62 +364,4 @@ html {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 4px;
-}
-
-.modal-body {
-    padding: 16px;
-}
-
-.modal-label {
-    display: block;
-    font-size: 15px;
-    margin-bottom: 12px;
-}
-
-.modal-input {
-    padding: 8px;
-    border: 1px solid #ccc;
-    width: 100%;
-    font-size: 15px;
-    margin-bottom: 24px;
-}
-
-.pay-ticket {
-    width: 100%;
-    padding: 18px;
-    background-color: #009688;
-    color: white;
-    font-size: 15px;
-    border: 0px none;
-    text-transform: uppercase;
-}
-
-.pay-ticket:hover {
-    color: black;
-    background-color: #ccc;
-    cursor: pointer;
-    opacity: 0.9;
-}
-
-.modal-footer {
-    padding: 16px;
-    text-align: right;
-}
-
-.modal-footer .modal-help a {
-    color: #2196F3;
-}
-
-
-/* Tạo animation */
-
-@keyframes modalFadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-140px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }

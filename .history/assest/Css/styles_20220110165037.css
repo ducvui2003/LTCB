@@ -425,11 +425,9 @@ html {
 
 @keyframes modalFadeIn {
     from {
-        opacity: 0;
-        transform: translateY(-140px);
+        transform: translateY(-100px);
     }
     to {
-        opacity: 1;
         transform: translateY(0);
     }
 }

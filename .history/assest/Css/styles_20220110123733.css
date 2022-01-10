@@ -325,24 +325,19 @@ html {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.4);
     /* Flex-box */
+    display: flex;
     /* Căn items theo chiều cao */
     align-items: center;
     /* Căn items theo chiều ngang */
     justify-content: center;
-    display: none;
-}
-
-.modal.open {
-    display: flex;
 }
 
 .modal-container {
     background-color: #fff;
     width: 900px;
-    max-width: calc(100% - 32px);
+    max-width: calc(100%-32px);
     min-height: 200px;
     position: relative;
-    animation: modalFadeIn ease 0.5s;
 }
 
 .modal-container .modal-close {
@@ -363,7 +358,7 @@ html {
 }
 
 .heading-modal {
-    width: 100%;
+    width: 900px;
     height: 129px;
     /* flex */
     display: flex;
@@ -395,7 +390,7 @@ html {
 }
 
 .pay-ticket {
-    width: 100%;
+    width: 868px;
     padding: 18px;
     background-color: #009688;
     color: white;
@@ -418,18 +413,4 @@ html {
 
 .modal-footer .modal-help a {
     color: #2196F3;
-}
-
-
-/* Tạo animation */
-
-@keyframes modalFadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-140px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }

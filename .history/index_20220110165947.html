@@ -222,6 +222,7 @@
             modal.classList.remove('open')
         }
 
+
         // Loop 3 button and listen Event Click
         // Run 3 rounds
         for (const buyBtn of buyBtns) {
@@ -229,10 +230,7 @@
             buyBtn.addEventListener('click', showBuyTickets)
         }
         // Listen Event when user clicked button close
-
         modalClose.addEventListener('click', hideBuyTickets)
-
-        modal.addEventListener('click', hideBuyTickets)
 
         modalContainer.addEventListener('click', function(event) {
             event.stopPropagation()

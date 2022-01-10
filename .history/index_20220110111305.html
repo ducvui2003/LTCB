@@ -121,7 +121,7 @@
                                 <h3 class="place-heading">New York</h3>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="buy-ticket js-buy-ticket">Buy Tickets</button>
+                                <a href="#" class="buy-ticket">Buy Tickets</a>
                             </div>
                         </div>
                         <!-- Place 2 -->
@@ -131,7 +131,7 @@
                                 <h3 class="place-heading">Paris</h3>
                                 <p class="place-time">Sat 28 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="buy-ticket js-buy-ticket">Buy Tickets</button>
+                                <a href="#" class="buy-ticket">Buy Tickets</a>
                             </div>
                         </div>
                         <!-- Place 3 -->
@@ -141,7 +141,7 @@
                                 <h3 class="place-heading">San Francisco</h3>
                                 <p class="place-time">Sun 29 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="buy-ticket js-buy-ticket">Buy Tickets</button>
+                                <a href="#" class="buy-ticket">Buy Tickets</a>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -162,82 +162,8 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal js-modal">
+    <div class="modal">
 
-        <div class="modal-container js-modal-container">
-            <div class="modal-close js-modal-close">
-                <ti class="ti-close"></ti>
-            </div>
-
-            <!-- Thẻ header dùng y như thẻ div -->
-            <header class="heading-modal">
-                <i class="ti-bag">
-            Tickets
-            </i>
-            </header>
-
-            <div class="modal-body">
-                <!-- quantity is id of input, it help user focus in label -->
-                <label for="ticket-quantity" class="modal-label">
-                    <i class="ti-shopping-cart"></i>
-                    Tickets, $15 per person
-                </label>
-                <input id="ticket-quantity" type="text" class="modal-input" placeholder="How many?">
-
-                <!-- quantity is id of input, it help user focus in label -->
-                <label for="ticket-email" class="modal-label">
-                    <i class="ti-user"></i>
-                    Send To
-                </label>
-                <input id="ticket-email" type="email" class="modal-input" placeholder="Enter email">
-                <button class="pay-ticket">
-                    Pay
-                    <i class="ti-check">
-                    </i>
-                </button>
-            </div>
-
-            <footer class="modal-footer">
-                <p class="modal-help">Need <a href="">help?</a></p>
-            </footer>
-        </div>
-    </div>
-
-
-    <script>
-        // querySelectorAll: Lấy ra tất cả
-        const buyBtns = document.querySelectorAll('.js-buy-ticket')
-            // querySelector: Lấy ra 1 thành phần
-        const modal = document.querySelector('.modal')
-        const modalClose = document.querySelector('.js-modal-close')
-        const modalContainer = document.querySelector('.js-modal-container')
-
-        // Function use to show modal tickets(add open to .modal)
-        function showBuyTickets() {
-            modal.classList.add('open')
-        }
-
-        // Function use to hide modal tikets (remove open of .modal)
-        function hideBuyTickets() {
-            modal.classList.remove('open')
-        }
-
-        // Loop 3 button and listen Event Click
-        // Run 3 rounds
-        for (const buyBtn of buyBtns) {
-            // addEventListner: lắng nghe hành vi người dung (click chuột) bên trong là thao tác kèm theo đó là hành động xảy ra sau khi click vào đó, ở đây t để 1 hàm sau dâu (,) để show menu ticket
-            buyBtn.addEventListener('click', showBuyTickets)
-        }
-        // Listen Event when user clicked button close
-
-        modalClose.addEventListener('click', hideBuyTickets)
-
-        modal.addEventListener('click', hideBuyTickets)
-
-        modalContainer.addEventListener('click', function(event) {
-            event.stopPropagation()
-        })
-    </script>
 </body>
 
 </html>
