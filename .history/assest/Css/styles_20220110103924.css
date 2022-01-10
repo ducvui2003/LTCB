@@ -257,7 +257,6 @@ html {
 
 .place-list {
     margin: 32px -8px 0px -8px;
-    padding-bottom: 48px;
 }
 
 .place-ticket {
@@ -308,7 +307,7 @@ html {
 
 .buy-ticket:hover {
     color: black;
-    background-color: #ccc;
+    background-color: white;
 }
 
 #footer {}

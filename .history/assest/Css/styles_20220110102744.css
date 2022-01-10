@@ -257,7 +257,6 @@ html {
 
 .place-list {
     margin: 32px -8px 0px -8px;
-    padding-bottom: 48px;
 }
 
 .place-ticket {
@@ -268,7 +267,6 @@ html {
 
 .place-img {
     width: 100%;
-    display: block;
 }
 
 .place-img:hover {
@@ -277,38 +275,14 @@ html {
 
 .place-body {
     background-color: white;
-    padding: 16px;
-    font-size: 15px;
-    /* font-size có tính kế thừa */
 }
 
-.place-heading {
-    font-size: 15px;
-    font-weight: 600;
-}
+.place-heading {}
 
-.place-time {
-    margin-top: 15px;
-    color: #757575;
-}
+.place-time {}
 
-.place-desc {
-    margin-top: 15px;
-    line-height: 1.4;
-}
+.place-desc {}
 
-.buy-ticket {
-    color: white;
-    background-color: black;
-    text-decoration: none;
-    display: inline-block;
-    padding: 11px 16px;
-    margin-top: 15px;
-}
-
-.buy-ticket:hover {
-    color: black;
-    background-color: #ccc;
-}
+.buy-ticket {}
 
 #footer {}

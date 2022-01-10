@@ -256,59 +256,23 @@ html {
 /* Plac-list */
 
 .place-list {
-    margin: 32px -8px 0px -8px;
-    padding-bottom: 48px;
+    margin-top: 32px;
 }
 
 .place-ticket {
     float: left;
-    width: calc(100% / 3);
-    padding: 0 8px;
 }
 
-.place-img {
-    width: 100%;
-    display: block;
-}
+.place-img {}
 
-.place-img:hover {
-    opacity: 0.6;
-}
+.place-body {}
 
-.place-body {
-    background-color: white;
-    padding: 16px;
-    font-size: 15px;
-    /* font-size có tính kế thừa */
-}
+.place-heading {}
 
-.place-heading {
-    font-size: 15px;
-    font-weight: 600;
-}
+.place-time {}
 
-.place-time {
-    margin-top: 15px;
-    color: #757575;
-}
+.place-desc {}
 
-.place-desc {
-    margin-top: 15px;
-    line-height: 1.4;
-}
-
-.buy-ticket {
-    color: white;
-    background-color: black;
-    text-decoration: none;
-    display: inline-block;
-    padding: 11px 16px;
-    margin-top: 15px;
-}
-
-.buy-ticket:hover {
-    color: black;
-    background-color: #ccc;
-}
+.buy-ticket {}
 
 #footer {}
