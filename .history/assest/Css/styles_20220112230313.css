@@ -215,33 +215,36 @@ html {
     /* overflow: hidden; */
 }
 
-#content .member-name {
+
+/* 
+#content .member-item {
+    text-align: center;
+    /* Can hinh voi chu */
+
+
+}
+*/ #content .member-name {
     font-size: 15px;
 }
-
 #content .member-avatar {
     margin-top: 15px;
     width: 154px;
     /* Dung the <img> thì chỉ cần đặt 1 chiều */
+    
     border-radius: 4px;
     /* Dùng để tạo bo góc của ảnh */
 }
 
-
 /* Tour-section */
-
 #content .tour-section {
     background-color: black;
 }
 
-
 /* Ticket-list */
-
 .ticket-list {
     background-color: white;
     margin-top: 40px;
 }
-
 .ticket-list li {
     font-size: 15px;
     padding: 11px 16px;
@@ -249,20 +252,19 @@ html {
     color: #757575;
     list-style: none;
 }
-
 .ticket-list .sold-out {
     color: white;
     background-color: #f44336;
     margin-left: 16px;
     padding: 3px 4px;
 }
-
 .ticket-list .quantity {
     float: right;
     width: 24px;
     height: 24px;
     border-radius: 50%;
     /* Tao bop goc deu de co hinh tron */
+    
     text-align: center;
     line-height: 24px;
     background-color: black;
@@ -271,50 +273,40 @@ html {
     /* Có thẻ float nên có thuộc tính block -> xét đc width, height, dùng đc margin (-) */
 }
 
-
 /* Plac-list */
-
 .place-list {
     margin-top: 32px;
     padding-bottom: 48px;
 }
 
-
 /* .place-ticket {
     width: calc(100% / 3);
 } */
-
 .place-img {
     width: 100%;
     display: block;
 }
-
 .place-img:hover {
     opacity: 0.6;
 }
-
 .place-body {
     background-color: white;
     padding: 16px;
     font-size: 15px;
     /* font-size có tính kế thừa */
 }
-
 .place-heading {
     font-size: 15px;
     font-weight: 600;
 }
-
 .place-time {
     margin-top: 15px;
     color: #757575;
 }
-
 .place-desc {
     margin-top: 15px;
     line-height: 1.4;
 }
-
 .buy-ticket {
     color: white;
     background-color: black;
@@ -323,19 +315,16 @@ html {
     padding: 11px 16px;
     margin-top: 15px;
 }
-
 .buy-ticket:hover {
     color: black;
     background-color: #ccc;
 }
-
 #footer {}
 
-
 /* Modal */
-
 .modal {
     /* Create Overlay */
+    
     position: fixed;
     left: 0;
     right: 0;
@@ -344,16 +333,16 @@ html {
     background-color: rgba(0, 0, 0, 0.4);
     /* Flex-box */
     /* Căn items theo chiều cao */
+    
     align-items: center;
     /* Căn items theo chiều ngang */
+    
     justify-content: center;
     display: none;
 }
-
 .modal.open {
     display: flex;
 }
-
 .modal-container {
     background-color: #fff;
     width: 900px;
@@ -362,7 +351,6 @@ html {
     position: relative;
     animation: modalFadeIn ease 0.5s;
 }
-
 .modal-container .modal-close {
     position: absolute;
     top: 0;
@@ -370,20 +358,20 @@ html {
     font-size: 24px;
     color: white;
     /* Make Icon large */
+    
     padding: 12px;
 }
-
 .modal-container .modal-close:hover {
     color: black;
     background-color: #ccc;
     cursor: pointer;
     opacity: 0.8;
 }
-
 .heading-modal {
     width: 100%;
     height: 129px;
     /* flex */
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -393,17 +381,14 @@ html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 4px;
 }
-
 .modal-body {
     padding: 16px;
 }
-
 .modal-label {
     display: block;
     font-size: 15px;
     margin-bottom: 12px;
 }
-
 .modal-input {
     padding: 8px;
     border: 1px solid #ccc;
@@ -411,7 +396,6 @@ html {
     font-size: 15px;
     margin-bottom: 24px;
 }
-
 .pay-ticket {
     width: 100%;
     padding: 18px;
@@ -421,31 +405,27 @@ html {
     border: 0px none;
     text-transform: uppercase;
 }
-
 .pay-ticket:hover {
     color: black;
     background-color: #ccc;
     cursor: pointer;
     opacity: 0.9;
 }
-
 .modal-footer {
     padding: 16px;
     text-align: right;
 }
-
 .modal-footer .modal-help a {
     color: #2196F3;
 }
 
-
 /* Tạo animation */
-
 @keyframes modalFadeIn {
     from {
         opacity: 0;
         transform: translateY(-140px);
     }
+    
     to {
         opacity: 1;
         transform: translateY(0);

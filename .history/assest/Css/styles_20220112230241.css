@@ -215,6 +215,11 @@ html {
     /* overflow: hidden; */
 }
 
+#content .member-item {
+    text-align: center;
+    /* Can hinh voi chu */
+}
+
 #content .member-name {
     font-size: 15px;
 }

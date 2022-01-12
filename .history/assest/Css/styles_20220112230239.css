@@ -22,7 +22,7 @@ html {
 }
 
 .text-align {
-    text-align: center !important;
+    text-align: center!important;
 }
 
 .row {
@@ -213,6 +213,11 @@ html {
 #content .member-list {
     margin-top: 48px;
     /* overflow: hidden; */
+}
+
+#content .member-item {
+    text-align: center;
+    /* Can hinh voi chu */
 }
 
 #content .member-name {

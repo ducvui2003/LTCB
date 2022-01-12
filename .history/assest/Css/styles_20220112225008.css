@@ -21,10 +21,6 @@ html {
     color: white !important;
 }
 
-.text-align {
-    text-align: center !important;
-}
-
 .row {
     margin: 0px -8px;
 }
@@ -32,14 +28,6 @@ html {
 .col {
     float: left;
     padding: 0 8px;
-}
-
-.col-half {
-    width: 50%;
-}
-
-.col-third {
-    width: calc(100% / 3);
 }
 
 
@@ -215,6 +203,13 @@ html {
     /* overflow: hidden; */
 }
 
+#content .member-item {
+    float: left;
+    width: calc(100% /3);
+    text-align: center;
+    /* Can hinh voi chu */
+}
+
 #content .member-name {
     font-size: 15px;
 }
@@ -279,10 +274,11 @@ html {
     padding-bottom: 48px;
 }
 
-
-/* .place-ticket {
+.place-ticket {
+    float: left;
     width: calc(100% / 3);
-} */
+    padding: 0 8px;
+}
 
 .place-img {
     width: 100%;

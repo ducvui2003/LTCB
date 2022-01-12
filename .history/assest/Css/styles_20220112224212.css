@@ -21,26 +21,9 @@ html {
     color: white !important;
 }
 
-.text-align {
-    text-align: center !important;
-}
+.col {}
 
-.row {
-    margin: 0px -8px;
-}
-
-.col {
-    float: left;
-    padding: 0 8px;
-}
-
-.col-half {
-    width: 50%;
-}
-
-.col-third {
-    width: calc(100% / 3);
-}
+.row {}
 
 
 /* main */
@@ -215,6 +198,13 @@ html {
     /* overflow: hidden; */
 }
 
+#content .member-item {
+    float: left;
+    width: calc(100% /3);
+    text-align: center;
+    /* Can hinh voi chu */
+}
+
 #content .member-name {
     font-size: 15px;
 }
@@ -275,14 +265,15 @@ html {
 /* Plac-list */
 
 .place-list {
-    margin-top: 32px;
+    margin: 32px -8px 0px -8px;
     padding-bottom: 48px;
 }
 
-
-/* .place-ticket {
+.place-ticket {
+    float: left;
     width: calc(100% / 3);
-} */
+    padding: 0 8px;
+}
 
 .place-img {
     width: 100%;
