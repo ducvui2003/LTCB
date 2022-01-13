@@ -35,10 +35,6 @@ html {
     margin: 0px -8px;
 }
 
-.pull-right {
-    float: right !important;
-}
-
 .btn {
     color: white;
     background-color: black;
@@ -47,7 +43,6 @@ html {
     padding: 11px 16px;
     margin-top: 15px;
     border: none;
-    font-size: 15px;
 }
 
 .btn:hover {

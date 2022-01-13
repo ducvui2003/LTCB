@@ -35,7 +35,7 @@ html {
     margin: 0px -8px;
 }
 
-.pull-right {
+.full-right {
     float: right !important;
 }
 
@@ -47,7 +47,6 @@ html {
     padding: 11px 16px;
     margin-top: 15px;
     border: none;
-    font-size: 15px;
 }
 
 .btn:hover {

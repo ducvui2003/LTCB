@@ -10,18 +10,12 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-/* .clear {
+.clear {
     clear: both;
-} */
-
-.mt-8 {
-    margin-top: 8px !important;
 }
 
-.mt-16 {
-    margin-top: 16px !important;
-}
+
+/* Dung cho chu mau trang */
 
 .text-white {
     color: white !important;
@@ -33,36 +27,6 @@ html {
 
 .row {
     margin: 0px -8px;
-}
-
-.pull-right {
-    float: right !important;
-}
-
-.btn {
-    color: white;
-    background-color: black;
-    text-decoration: none;
-    display: inline-block;
-    padding: 11px 16px;
-    margin-top: 15px;
-    border: none;
-    font-size: 15px;
-}
-
-.btn:hover {
-    color: black;
-    background-color: #ccc;
-    cursor: pointer;
-}
-
-
-/* peasudo class  */
-
-.row::after {
-    content: "";
-    display: block;
-    clear: both;
 }
 
 .col {
@@ -355,6 +319,20 @@ html {
     line-height: 1.4;
 }
 
+.buy-ticket {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 11px 16px;
+    margin-top: 15px;
+}
+
+.buy-ticket:hover {
+    color: black;
+    background-color: #ccc;
+}
+
 
 /* Contact -form */
 
@@ -376,23 +354,10 @@ html {
     font-size: 15px;
 }
 
-.contact-form .form-control {
+.contact-form .form-cotrol {
     padding: 10px;
     border: 1px solid #ccc;
-    width: 100%;
 }
-
-
-/* .form-submit-btn {
-    color: white;
-    background-color: black;
-    padding: 8px 16px;
-    border: 1px solid black;
-    float: right;
-} */
-
-
-/* Footer */
 
 #footer {}
 

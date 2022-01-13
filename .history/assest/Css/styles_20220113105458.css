@@ -35,27 +35,6 @@ html {
     margin: 0px -8px;
 }
 
-.pull-right {
-    float: right !important;
-}
-
-.btn {
-    color: white;
-    background-color: black;
-    text-decoration: none;
-    display: inline-block;
-    padding: 11px 16px;
-    margin-top: 15px;
-    border: none;
-    font-size: 15px;
-}
-
-.btn:hover {
-    color: black;
-    background-color: #ccc;
-    cursor: pointer;
-}
-
 
 /* peasudo class  */
 
@@ -355,6 +334,20 @@ html {
     line-height: 1.4;
 }
 
+.buy-ticket {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 11px 16px;
+    margin-top: 15px;
+}
+
+.buy-ticket:hover {
+    color: black;
+    background-color: #ccc;
+}
+
 
 /* Contact -form */
 
@@ -382,17 +375,11 @@ html {
     width: 100%;
 }
 
-
-/* .form-submit-btn {
+.form-submit-btn {
     color: white;
     background-color: black;
     padding: 8px 16px;
-    border: 1px solid black;
-    float: right;
-} */
-
-
-/* Footer */
+}
 
 #footer {}
 
