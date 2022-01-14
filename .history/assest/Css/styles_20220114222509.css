@@ -188,7 +188,7 @@ html {
     margin-top: 46px;
     padding-top: 50%;
     /* 50% chieu ngang cua chinh the do */
-    background: url("/assest/Img/Slides/ChicagoPicture.jpg") top center / cover no-repeat;
+    background: url('/assest/Img/Slides/ChicagoPicture.jpg') top center / cover no-repeat;
     /* shorthand */
     position: relative;
 }
