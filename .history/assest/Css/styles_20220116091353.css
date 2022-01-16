@@ -193,6 +193,8 @@ html {
     padding-top: 50%;
 }
 
+#slides img {}
+
 #slides .text-content {
     position: absolute;
     bottom: 46px;

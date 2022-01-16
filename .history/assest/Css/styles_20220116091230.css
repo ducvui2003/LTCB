@@ -185,12 +185,15 @@ html {
 #slides {
     /* min-height: 1000px; */
     /* background-color: pink; */
-    background: url("/assest/Img/Slides/slide1.jpg") top center / cover no-repeat;
-    position: relative;
-    /* 50% chieu ngang cua chinh the do */
-    /* shorthand */
     margin-top: 46px;
     padding-top: 50%;
+    /* 50% chieu ngang cua chinh the do */
+    /* shorthand */
+}
+
+#slides img {
+    background: url("/assest/Img/Slides/slide1.jpg") top center / cover no-repeat;
+    position: relative;
 }
 
 #slides .text-content {
