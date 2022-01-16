@@ -1,0 +1,549 @@
+/* Common */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* .clear {
+    clear: both;
+} */
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.text-align {
+    text-align: center !important;
+}
+
+.row {
+    margin: 0px -8px;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.btn {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 11px 16px;
+    margin-top: 15px;
+    border: none;
+    font-size: 15px;
+}
+
+.btn:hover {
+    color: black;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+
+/* peasudo class  */
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding: 0 8px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: calc(100% / 3);
+}
+
+
+/* main */
+
+#main {}
+
+#header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    /* fixed đang nổi lên nó sẽ nhường vị trí cho div slides tiếp theo */
+    height: 46px;
+    background-color: black;
+    z-index: 1;
+    /* dùng để thêm vào thẻ fixed nhằm đẩy block lên trên các block khác theo chiều cao, giá trị là 0, 1,... */
+}
+
+#nav {
+    display: inline-block;
+    /* display để thẻ nav chỉ dài đúng nội dung của nó thôi */
+}
+
+#nav,
+.subnav {
+    list-style: none;
+}
+
+#nav>li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav>li>a {
+    color: white;
+    text-transform: uppercase;
+    /* chinh chu thuong thanh hoa */
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav>li:hover>a,
+#nav .subnav li:hover a {
+    background-color: #ccc;
+    color: black;
+}
+
+#nav li:hover a {
+    /* line-height: 46px; */
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top: 46px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav li a {
+    color: black;
+    padding: 0 16px;
+    line-height: 38px;
+    width: 160px;
+}
+
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+
+#header .search-button {
+    float: right;
+    /* thẻ search-button là thẻ div, có tính kế thừa chiều ngang, nên khi float vào sẽ vô hiệu hoá tính kế thừa chiều ngang đó */
+    line-height: 46px;
+    padding: 0 24px;
+}
+
+#header .search-button:hover {
+    background-color: #f44336;
+    cursor: pointer;
+    /* Dùng để thay đổi con trỏ chuột khi di vào */
+}
+
+#header .search-icon {
+    color: white;
+    font-size: 20px;
+}
+
+#slides {
+    /* min-height: 1000px; */
+    /* background-color: pink; */
+    margin-top: 46px;
+    padding-top: 50%;
+    /* 50% chieu ngang cua chinh the do */
+    background: url('/assest/Img/Slides/ChicagoPicture.jpg') top center / cover no-repeat;
+    /* shorthand */
+    position: relative;
+}
+
+#slides .text-content {
+    position: absolute;
+    bottom: 46px;
+    left: 50%;
+    /* Cách lề trái 50% chiều ngang */
+    transform: translateX(-50%);
+    /* Dùng để lùi thẻ theo trục X 50% chiều dài -> Mục đích kết hợp vs transform để căn giữa block */
+    color: white;
+    text-align: center;
+    /* Dùng để căn giữa content, ko dùng để căn block */
+    /* cách 2: Thêm width: 100% */
+    /* /* cách 3 left: 0 right: 0; */
+}
+
+#slides .text-heading {
+    font-weight: 500;
+    /* dùng để điều chỉnh lại độ dày của chữ, giá trị từ 100-1000  */
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+#slides .text-paragraph {
+    font-size: 15px;
+}
+
+#content {}
+
+#content .content-section {
+    width: 800px;
+    padding: 64px 0 112px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.5;
+}
+
+#content .content-text {
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: justify;
+    /* Can deu van ban */
+    line-height: 1.4;
+    /* Khoang cach giua 2 hang chu */
+}
+
+#content .member-list {
+    margin-top: 48px;
+    /* overflow: hidden; */
+}
+
+#content .member-name {
+    font-size: 15px;
+}
+
+#content .member-avatar {
+    margin-top: 15px;
+    width: 154px;
+    /* Dung the <img> thì chỉ cần đặt 1 chiều */
+    border-radius: 4px;
+    /* Dùng để tạo bo góc của ảnh */
+}
+
+
+/* Tour-section */
+
+#content .tour-section {
+    background-color: black;
+}
+
+
+/* Ticket-list */
+
+.ticket-list {
+    background-color: white;
+    margin-top: 40px;
+}
+
+.ticket-list li {
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+    list-style: none;
+}
+
+.ticket-list .sold-out {
+    color: white;
+    background-color: #f44336;
+    margin-left: 16px;
+    padding: 3px 4px;
+}
+
+.ticket-list .quantity {
+    float: right;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    /* Tao bop goc deu de co hinh tron */
+    text-align: center;
+    line-height: 24px;
+    background-color: black;
+    color: white;
+    margin: -2px;
+    /* Có thẻ float nên có thuộc tính block -> xét đc width, height, dùng đc margin (-) */
+}
+
+
+/* Place-list */
+
+.place-list {
+    margin-top: 32px;
+}
+
+
+/* .place-ticket {
+    width: calc(100% / 3);
+} */
+
+.place-img {
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.place-body {
+    background-color: white;
+    padding: 16px;
+    font-size: 15px;
+    /* font-size có tính kế thừa */
+}
+
+.place-heading {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.place-time {
+    margin-top: 15px;
+    color: #757575;
+}
+
+.place-desc {
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+
+/* Contact -form */
+
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+
+/* .form-submit-btn {
+    color: white;
+    background-color: black;
+    padding: 8px 16px;
+    border: 1px solid black;
+    float: right;
+} */
+
+.map-section img {
+    width: 100%;
+}
+
+
+/* Footer */
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .social-list {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+#footer .social-list a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+#footer .copyrigth a:hover,
+#footer .social-list a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .copyrigth {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyrigth a {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+/* Modal */
+
+.modal {
+    /* Create Overlay */
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Flex-box */
+    /* Căn items theo chiều cao */
+    align-items: center;
+    /* Căn items theo chiều ngang */
+    justify-content: center;
+    display: none;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn ease 0.5s;
+}
+
+.modal-container .modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 24px;
+    color: white;
+    /* Make Icon large */
+    padding: 12px;
+}
+
+.modal-container .modal-close:hover {
+    color: black;
+    background-color: #ccc;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.heading-modal {
+    width: 100%;
+    height: 129px;
+    /* flex */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #009688;
+    font-size: 30px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 4px;
+}
+
+.modal-body {
+    padding: 16px;
+}
+
+.modal-label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.modal-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+.pay-ticket {
+    width: 100%;
+    padding: 18px;
+    background-color: #009688;
+    color: white;
+    font-size: 15px;
+    border: 0px none;
+    text-transform: uppercase;
+}
+
+.pay-ticket:hover {
+    color: black;
+    background-color: #ccc;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.modal-footer {
+    padding: 16px;
+    text-align: right;
+}
+
+.modal-footer .modal-help a {
+    color: #2196F3;
+}
+
+
+/* animation */
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
