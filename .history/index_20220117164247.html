@@ -292,13 +292,14 @@
     <script>
         var header = document.getElementById('header');
         var mobileMenu = document.getElementById('mobile-menu');
-        var headerHieght = header.clientHeight;
+
         mobileMenu.onclick = function() {
-            var isClosed = header.clientHeight === headerHieght;
+            var isClosed = header.clientHeight === 46;
             if (isClosed) {
                 header.style.height = 'auto';
-            } else {
-                header.style.height = null;
+                else {
+
+                }
             }
         }
     </script>

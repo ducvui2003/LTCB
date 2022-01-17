@@ -291,15 +291,10 @@
 
     <script>
         var header = document.getElementById('header');
-        var mobileMenu = document.getElementById('mobile-menu');
-        var headerHieght = header.clientHeight;
+        var mobileMEnu = document.getElementById('mobile-menu');
+
         mobileMenu.onclick = function() {
-            var isClosed = header.clientHeight === headerHieght;
-            if (isClosed) {
-                header.style.height = 'auto';
-            } else {
-                header.style.height = null;
-            }
+            alert('thong bao')
         }
     </script>
 </body>

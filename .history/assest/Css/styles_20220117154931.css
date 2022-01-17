@@ -98,7 +98,6 @@ html {
     background-color: black;
     z-index: 1;
     /* dùng để thêm vào thẻ fixed nhằm đẩy block lên trên các block khác theo chiều cao, giá trị là 0, 1,... */
-    overflow: hidden;
 }
 
 #nav {
@@ -165,12 +164,11 @@ html {
     font-size: 14px;
 }
 
-#header .mobile-search-button,
 #header .search-button {
     float: right;
-    line-height: 46px;
     /* thẻ search-button là thẻ div, có tính kế thừa chiều ngang, nên khi float vào sẽ vô hiệu hoá tính kế thừa chiều ngang đó */
-    padding: 0 21px;
+    line-height: 46px;
+    padding: 0 24px;
 }
 
 #header .search-button:hover {
@@ -179,15 +177,6 @@ html {
     /* Dùng để thay đổi con trỏ chuột khi di vào */
 }
 
-#header .mobile-search-button:hover {
-    background-color: gray;
-}
-
-#header .mobile-search-button:hover .menu-icon {
-    color: black;
-}
-
-.menu-icon,
 #header .search-icon {
     color: white;
     font-size: 20px;
@@ -237,8 +226,6 @@ html {
     padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
 }
 
 #content .section-heading {

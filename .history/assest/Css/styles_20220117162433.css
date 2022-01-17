@@ -168,7 +168,6 @@ html {
 #header .mobile-search-button,
 #header .search-button {
     float: right;
-    line-height: 46px;
     /* thẻ search-button là thẻ div, có tính kế thừa chiều ngang, nên khi float vào sẽ vô hiệu hoá tính kế thừa chiều ngang đó */
     padding: 0 21px;
 }
@@ -179,18 +178,15 @@ html {
     /* Dùng để thay đổi con trỏ chuột khi di vào */
 }
 
-#header .mobile-search-button:hover {
+#header .mobile-search-button {
     background-color: gray;
 }
 
-#header .mobile-search-button:hover .menu-icon {
-    color: black;
-}
-
-.menu-icon,
+#header .menu-icon,
 #header .search-icon {
     color: white;
     font-size: 20px;
+    line-height: 46px;
 }
 
 #slides {
