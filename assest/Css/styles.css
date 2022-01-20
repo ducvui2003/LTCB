@@ -196,7 +196,7 @@ html {
 #slides {
     /* min-height: 1000px; */
     /* background-color: pink; */
-    background: url("/assest/Img/Slides/slide1.jpg") top center / cover no-repeat;
+    background: url(../Img/Teams/slide.jpg) top center / cover no-repeat;
     position: relative;
     /* 50% chieu ngang cua chinh the do */
     /* shorthand */

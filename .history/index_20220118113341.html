@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Band</title>
     <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/1753/1753311.png">
-    <link rel="stylesheet" href="./assest/Fonts/themify-icons-font (1)/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assest/Css/styles.css">
     <link rel="stylesheet" href="./assest/Css/responsive.css">
+    <link rel="stylesheet" href="./assest/Fonts/themify-icons-font (1)/themify-icons/themify-icons.css">
 </head>
 
 <body>
@@ -309,8 +309,8 @@
         for (var i = 0; i < menuItems.length; i++) {
             var menuItem = menuItems[i];
 
-            menuItem.onclick = function() {
-                header.style.height = null;
+            menuItem.oneclick = function() {
+                console.log(menuItem);
             }
         }
     </script>
