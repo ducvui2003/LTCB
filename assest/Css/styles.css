@@ -98,7 +98,6 @@ html {
     background-color: black;
     z-index: 1;
     /* dùng để thêm vào thẻ fixed nhằm đẩy block lên trên các block khác theo chiều cao, giá trị là 0, 1,... */
-    overflow: hidden;
 }
 
 #nav {
@@ -171,6 +170,13 @@ html {
     line-height: 46px;
     /* thẻ search-button là thẻ div, có tính kế thừa chiều ngang, nên khi float vào sẽ vô hiệu hoá tính kế thừa chiều ngang đó */
     padding: 0 21px;
+}
+
+#header .mobile-search-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
 }
 
 #header .search-button:hover {

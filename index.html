@@ -49,12 +49,15 @@
                 </li>
             </ul>
             <!-- End: Nav -->
-            <!-- Begin: Search button -->
+            <!-- Mobile seacrh-btn -->
+            <div id="mobile-menu" class="mobile-search-button">
+                <i class="menu-icon ti-menu">
+                </i></div>
+            <!-- Search-btn -->
             <div class="search-button">
                 <i class="search-icon ti-search"></i>
             </div>
-            <div id="mobile-menu" class="mobile-search-button"><i class="menu-icon ti-menu"></i></div>
-            <!-- End: Search button -->
+
         </div>
         <!-- End: Header -->
 
@@ -310,7 +313,13 @@
             var menuItem = menuItems[i];
 
             menuItem.onclick = function() {
-                header.style.height = null;
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+
+                if (isParentMenu) {
+                    event.preventDefault('');
+                } else {
+                    header.style.height = null;
+                }
             }
         }
     </script>
