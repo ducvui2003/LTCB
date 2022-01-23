@@ -1,6 +1,15 @@
 /* Mobile */
 
 @media (max-width:740px) {
+    .s-full-width {
+        width: 100% !important;
+    }
+    .s-col-full {
+        width: 100% !important;
+    }
+    .s-mt-8 {
+        margin-top: 8px !important;
+    }
     #header {
         overflow: hidden;
     }
@@ -30,6 +39,15 @@
     #nav .subnav li a {
         color: white;
         padding: 5px 41px;
+    }
+    #content .member-avatar {
+        width: 60%;
+    }
+    #content .content-text {
+        font-family: 'Lato', sans-serif;
+    }
+    .contact-form {
+        margin-top: 16px;
     }
 }
 
