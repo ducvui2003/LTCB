@@ -54,6 +54,7 @@ html {
     border: none;
     font-size: 15px;
     text-align: center;
+    -webkit-appearance: none;
 }
 
 .btn:hover {
@@ -390,6 +391,15 @@ html {
 .contact-info {
     font-size: 15px;
     line-height: 1.5;
+}
+
+.contact-info a {
+    color: #ef214ea8;
+    opacity: 0.8;
+}
+
+.contact-info a:hover {
+    opacity: 1;
 }
 
 .contact-info i[class*="ti-"] {
